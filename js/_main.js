@@ -67,7 +67,7 @@
 
 	    // Special cases are really fun and not at all irritating. DO IT
 	    if (winW >= 768) {
-	    	$('#slide-7').height(winH);
+	    	$('#slide-9').height(winH);
 	    }
 	    
 	   	if (s) {
