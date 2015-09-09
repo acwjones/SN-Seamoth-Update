@@ -12,6 +12,7 @@
 	$window = $(window);
 	$slide = $('.homeSlide');
 	$slideTall = $('.homeSlideTall');
+	$mobileTall = $('.mobileTall');
 	$slideTall2 = $('.homeSlideTall2');
 	$body = $('body');
 	htmlbody = $('html,body');
@@ -63,11 +64,12 @@
 	    
 	    $slide.height(winH);
 	    $slideTall.height(winH*2);
+	    $mobileTall.height(winH*2);
 	    $slideTall2.height(winH*3);
 
 	    // Special cases are really fun and not at all irritating. DO IT
 	    if (winW >= 768) {
-	    	$('#slide-9').height(winH);
+	    	$mobileTall.height(winH);
 	    }
 	    
 	   	if (s) {

@@ -312,7 +312,7 @@ video#bgvid {
 /* Slide 3 */
 #slide-3 .bcg {
     background: #e7ffff;
-    background-image:url('../img/subnautica_seamoth_1.jpg');
+    background-image:url('../img/subnautica_seamoth_mob.jpg');
     text-align: center;
     background-position: center center;
     background-repeat: no-repeat;
@@ -361,49 +361,9 @@ video#bgvid {
     z-index: 1000;
 }
 
+
 /* Slide 4 */
-
-#slide-4 .bcg { 
-    background: #e7ffff;
-    background-image:url('../img/sea_background_3.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover; 
-}
-
-#slide-4 .dialog {
-    position: absolute;
-    right: 30px;
-    top: 82px;    
-}
-
-#slide-4 .log {
-    position: absolute;
-    top: 12%;
-    left: 5%;
-}
-
-#slide-4 p {
-    margin-bottom:10px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.seamoth-img {
-    max-width: 100%;
-    margin: auto;
-}
-
-
-
-/* Slide 5 */
-#slide-5 .bcg {
+#slide-4 .bcg {
     background: #e7ffff;
     background-image:url('../img/sea_background_3.jpg');
     background-position: center center;
@@ -413,11 +373,11 @@ video#bgvid {
     width: 100%;
 }
 
-#slide-5 h2 {
+#slide-4 h2 {
     color:#ddd;
 }
 
-#slide-5 p {
+#slide-4 p {
     color:#ddd !important;
 }
 
@@ -436,11 +396,20 @@ video#bgvid {
     display:none;
 }
 
+#seamoth-specs {
+    display: block;
+}
 
 
-/* Slide 6 */
+.seamoth-img {
+    max-width: 100%;
+    margin: auto;
+}
 
-#slide-6 .bcg {
+
+/* Slide 5 */
+
+#slide-5 .bcg {
     background: #e7ffff;
     background-image:url('../img/sea_background_4.jpg');
     background-position: center center;
@@ -451,17 +420,17 @@ video#bgvid {
 }
 
 
-#slide-6 h3 { 
+#slide-5 h3 { 
     margin-top: 50px;
     margin-bottom: 10px; 
 }
 
-#slide-6 p {
+#slide-5 p {
     margin-bottom:10px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-#slide-6 ul {
+#slide-5 ul {
     list-style-position: inside;
     margin: auto;
     margin-bottom:10px;
@@ -469,9 +438,14 @@ video#bgvid {
     color: rgba(255, 255, 255, 0.7);
  }
 
-/* Slide 7 */
-#slide-7 { position: relative; }
-#slide-7 .bcg {
+ .img-col-2 img {
+    margin: auto;
+    max-width: 128px;
+}
+
+/* Slide 6 */
+#slide-6 { position: relative; }
+#slide-6 .bcg {
     background: #e7ffff;
     background-image:url('../img/subnautica_upgrade_1.jpg');
     background-position: center center;
@@ -481,19 +455,19 @@ video#bgvid {
     width: 100%;
 }
 
-#slide-7 p {
+#slide-6 p {
     width: auto;
     margin-bottom:10px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-#slide-7 .dialog {
+#slide-6 .dialog {
     display:none; 
 }
 
-/* Slide 8 */
+/* Slide 7 */
 
-#slide-8 .bcg {
+#slide-7 .bcg {
     background: #e7ffff;
     background-image:url('../img/sea_background_4.jpg');
     background-position: center center;
@@ -503,52 +477,57 @@ video#bgvid {
     width: 100%;
 }
 
-#slide-8 h3 { margin-bottom: 10px; }
+#slide-7 h3 { margin-bottom: 10px; }
 
-#slide-8 p {
+#slide-7 p {
     width: auto;
     margin-bottom:10px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Slide 9 */
+/* Slide 8 */
 
-#slide-9 .bcg {background-image:url('../img/concept_grassy_1.jpg')}
+#slide-8 .bcg {background-image:url('../img/concept_grassy_1.jpg')}
 
-#slide-9 .big-picture-copy {  
+#slide-8 .big-picture-copy {  
     margin:auto;; 
     width: 600px;
 }
 
-#slide-9 h3 { margin-bottom: 10px; }
+#slide-8 h3 { margin-bottom: 10px; }
 
-#slide-9 p {
+#slide-8 p {
     margin-bottom:10px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Slide 10 */
+.tf-img {
+    max-width: 100%;
+    margin: auto;
+}
 
-#slide-10 .bcg { background-image:url('../img/subnautica_mountain_1.jpg'); }
+/* Slide 9 */
 
-#slide-10 .big-picture-copy {  
+#slide-9 .bcg { background-image:url('../img/subnautica_mountain_1.jpg'); }
+
+#slide-9 .big-picture-copy {  
     margin:auto;
     margin-top: 100px; 
     width: 600px;
 }
-#slide-10 .big-picture-copy h4 {
+#slide-9 .big-picture-copy h4 {
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: bold;
 }
 
-#slide-10 p {
+#slide-9 p {
     width: auto;
     margin-bottom:10px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-#slide-10 .hsContent {
+#slide-9 .hsContent {
     padding:0;
 }
 
@@ -562,25 +541,9 @@ video#bgvid {
     float:left;
 }
 
-/* Slide 11 */
+/* Slide 10 */
 
-#slide-11 .bcg {background-image:url('../img/sea_background_2.jpg')}
-
-#slide-11 .big-picture-copy {  
-    margin:auto;; 
-    width: 600px;
-}
-
-#slide-11 h3 { margin-bottom: 10px; }
-
-#slide-11 p {
-    margin-bottom:10px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Slide 12 */
-
-#slide-12 .bcg {
+#slide-10 .bcg {
     background: #000;
     background-image:url('../img/subnautica_emperor_1.jpg');
     background-position: center center;
@@ -591,25 +554,25 @@ video#bgvid {
     text-align: center;
 }
 
-#slide-12 h2 {
+#slide-10 h2 {
     color:#fff;
 }
 
-#slide-12 p {
+#slide-10 p {
     margin-bottom:30px;
     width: auto !important;
     max-width: 600px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-#slide-12 .dialog {
+#slide-10 .dialog {
     position: absolute;
     bottom: 68px;
     right: 30px;    
     word-wrap:break-word;
 }
 
-#slide-12 .dialog p {
+#slide-10 .dialog p {
     margin:auto;
 }
 
