@@ -666,6 +666,12 @@ video#bgvid {
         height: auto;
     }
 
+    .vid-responsive {
+        display: block;
+        max-width: 80%;
+        height: auto;
+    }
+
     .mail-list-form {
         width:80%;
         margin: 0 auto;

@@ -89,13 +89,13 @@
 			    		<div class="hsContent">
                             
                             <div class="video_container">
-                                <video autoplay loop muted poster="http://d1xnoqb6cz2ip.cloudfront.net/video/subnautica_habitat_1_still.jpg" 
+                                <video autoplay loop muted poster="http://dagpjqx8ho336.cloudfront.net/vid/20150910_SeamothUpdate_BackgroundVid_Still.jpg" 
                                 id="bgvid" 
                                 data-anchor-target="#slide-1" 
                                 data-bottom-top="background-position: 50% 0px" 
                                 data-top-bottom="background-position: 50% -100px;" 
                                 data-anchor-target="#slide-1">
-                                    <source src="http://d1xnoqb6cz2ip.cloudfront.net/video/subnautica_habitat_2.mp4" type = "video/mp4">
+                                    <source src="http://dagpjqx8ho336.cloudfront.net/vid/20150910_SeamothUpdate_BackgroundVid_32s.mp4" type = "video/mp4">
                                 </video>
                             </div>
 
@@ -200,7 +200,9 @@
                                     <div>
                                         <a href="#close" title="Close" class="close-modal">X</a>
                                         <h4>Seamoth Chassis Improvements</h4>
-                                        <img src="img/seamoth/seamoth_chassis.jpg" alt="Seamoth Chassis Improvements" />
+                                        <video autoplay loop muted poster="http://d1xnoqb6cz2ip.cloudfront.net/vid/stills/20150910_SN_SeamothUpdate_GIF_1_SeamothJump_Still.jpg" class="vid vid-responsive">
+                                            <source src="http://dagpjqx8ho336.cloudfront.net/vid/20150910_SN_SeamothUpdate_GIF_1_SeamothJump_500.mp4" type = "video/mp4">
+                                        </video>
                                         <p>The Seamoth chassis has been made lighter and more aerodynamic, enabling pilots to breach the water and remain airborne for longer.</p>
                                     </div>
                                 </div>
@@ -370,7 +372,9 @@
                                 <div class="cent-top">
                                     <h3>Vortex Torpedoes in Detail</h3>
 
-                                    <img class="img-responsive" src="img/seamoth/torpedo_icon.png" alt="Vortex Torpedo" />
+                                    <video autoplay loop muted poster="http://d1xnoqb6cz2ip.cloudfront.net/vid/stills/vid5_still_500.jpg" class="vid vid-responsive">
+                                        <source src="http://dagpjqx8ho336.cloudfront.net/vid/20150910_SN_SeamothUpdate_GIF_5_Torpedo_500.mp4" type = "video/mp4">
+                                    </video>
 
                                     <p>The payload utilizes gravity distortion technology to generate a vortex which pulls objects towards it before flinging them away. Torpedoes can be constructed at the Seamoth Upgrade Console.</p>
                                 </div>
@@ -547,47 +551,21 @@
         <script src="js/main.js"></script>
         <script src="js/_main.js"></script>
         <script src="js/lightbox.min.js"></script>
+        <script src="js/isInViewport.min.js"></script>
 
-
-        <!-- Turn off videos when more than 70% out of view -->
+        <!-- Turn off videos when out of view -->
         <script type="text/javascript">
             
-            var videos = document.getElementsByTagName("video"), fraction = 0.3;
           
               function checkScroll() {
               
-                for(var i = 0; i < videos.length; i++) {
-                  var video = videos[i];
-                  var x = 0,
-                      y = 0,
-                      w = video.offsetWidth,
-                      h = video.offsetHeight,
-                      r, //right
-                      b, //bottom
-                      visibleX, visibleY, visible,
-                      parent;
-
-                    parent = video;
-                    while (parent && parent !== document.body) {
-                      x += parent.offsetLeft;
-                      y += parent.offsetTop;
-                      parent = parent.offsetParent;
-                    }
-                  
-                    r = x + w;
-                    b = y + h;
-                  
-                    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-                    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-
-                    visible = visibleX * visibleY / (w * h);
-
-                    if (visible > fraction) {
-                        video.play();
+                $('video').each(function(){
+                    if ($(this).is(':in-viewport') && $(this).css('opacity') == 1) {
+                        $(this)[0].play();
                     } else {
-                        video.pause();
+                        $(this)[0].pause();
                     }
-                }
+                });
               
               }
               
